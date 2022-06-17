@@ -1367,6 +1367,8 @@
     margin-right: 23px;
 
     font-size: 12px;
+    color: var(--font-white);
+    line-height: 100%;
   }
 
   /* .footer-mobile__item:nth-child(3n) {
