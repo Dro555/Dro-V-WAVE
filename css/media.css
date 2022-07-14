@@ -99,7 +99,11 @@
     padding-bottom: 90px;
 
     background-image: url(../img/hero-mic-tab.png);
-    background-position: 94% 50%;
+    background-position: 93% 46%;
+  }
+
+  .hero__title {
+    width: 60%;
   }
 
   .hero__text {
@@ -108,15 +112,10 @@
     line-height: 150%;
   }
 
-  /* Podcast===================================== */
-  .podcast__btn-next {
-    margin-left: 35%;
-  }
-
   /* Radio======================================= */
   .radio__container {
     padding-top: 93px;
-    padding-bottom: 61px;
+    padding-bottom: 63px;
   }
 
   .left-content {
@@ -137,9 +136,6 @@
   .item-right {
     max-width: 47%;
     margin-right: 30px;
-    padding-bottom: 20px;
-
-    border: 1px solid var(--font-gray);
   }
 
   .item-right:nth-child(3n) {
@@ -150,13 +146,8 @@
     margin-right: 0;
   }
 
-  .item-right__discr {
-    margin-left: 15px;
-    margin-bottom: 19px;
-  }
-
-  .item-right__link {
-    margin-left: 9px;
+  .item-right__content {
+    padding-left: 14px;
   }
 
   /* Guests========================================== */
@@ -172,7 +163,7 @@
   }
 
   .guest-cart__social {
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   .guest-cart__text {
@@ -325,18 +316,14 @@
     left: 101.5%;
   }
 
-  .about-cart__title {
-    margin-top: 31px;
-  }
-
   .about__about-main {
     margin-bottom: 35px;
   }
 
   .swiper-navigation {
     top: 32%;
-    left: -8%;
-    width: 116%;
+    left: -5%;
+    width: 110%;
   }
 
   .about-form {
@@ -456,6 +443,10 @@
     background-position: 0 0;
   }
 
+  .hero__title {
+    width: 94%;
+  }
+
   .hero__text {
     max-width: 94%;
   }
@@ -468,11 +459,6 @@
   .item-blok {
     position: relative;
     width: 100%;
-  }
-
-  .podcast__btn-next {
-    margin-top: 29px;
-    margin-left: 27%;
   }
 
   .item-blok {
@@ -563,7 +549,7 @@
     padding-bottom: 8px;
   }
 
-  .link--text-another {
+  .accordion__item {
     margin-bottom: 29px;
   }
 
@@ -634,7 +620,7 @@
   /* Sale=========================================== */
   .sale__container {
     position: relative;
-    padding-top: 55px;
+    padding-top: 48px;
     padding-bottom: 93px;
     flex-direction: column;
   }
@@ -655,7 +641,7 @@
   .sale__content {
     width: 100%;
     margin-left: 0;
-    padding-top: 11%;
+    padding-top: 9%;
   }
 
   .sale__discr {
@@ -665,6 +651,7 @@
   .sale__title {
     width: 80%;
     background-position: -2px 94%;
+    padding-bottom: 37px;
   }
 
   .sale__btn {
@@ -673,6 +660,7 @@
 
   /* About========================================== */
   .about__container {
+    padding-top: 95px;
     padding-bottom: 92px;
   }
 
@@ -716,13 +704,13 @@
   }
 
   .swiper-navigation {
-    top: 30%;
-    left: -12%;
-    width: 124%;
+    top: 29%;
+    left: -13%;
+    width: 125%;
   }
 
   .about__about-main {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   .about-cart {
@@ -797,8 +785,8 @@
 @media (max-width: 660px) {
   .container {
     max-width: 600px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .headenav__nav {
@@ -810,16 +798,14 @@
   }
 
   .swiper-navigation {
-    top: 30%;
-    left: -8%;
-    width: 111%;
+    display: none;
   }
 }
 
 @media (max-width: 576px) {
   .container {
     max-width: 330px;
-    padding-left: 31px;
+    padding-left: 30px;
     padding-right: 30px;
   }
 
@@ -899,7 +885,7 @@
 
   .header__btn-enter {
     position: absolute;
-    right: 33px;
+    right: 11%;
     top: 10px;
     padding: 7px 22px;
   }
@@ -940,6 +926,10 @@
   .hero__title {
     margin-bottom: 7px;
     font-size: 32px;
+  }
+
+  .hero__title {
+    width: 100%;
   }
 
   .hero__text {
@@ -987,20 +977,20 @@
     bottom: 170px;
   }
 
-  .item-blok__img {
-    height: 72px;
+  .item-blok__img img {
+    width: 100%;
   }
 
   .content-top__time {
-    padding-top: 14px;
     margin-bottom: 6px;
 
     font-size: 12px;
   }
 
   .content-top {
-    padding-top: 0;
+    padding-top: 14px;
     padding-left: 17px;
+    padding-bottom: 11px;
   }
 
   .content-top__title {
@@ -1008,7 +998,6 @@
   }
 
   .content-top__author {
-    margin-bottom: 11px;
     font-size: 12px;
   }
 
@@ -1025,7 +1014,7 @@
 
   .like {
     padding-left: 35px;
-    padding-top: 6px;
+    padding-top: 4px;
   }
 
   .like__list {
@@ -1041,8 +1030,6 @@
   }
 
   .podcast__btn-next {
-    margin-top: 2px;
-    margin-left: 17%;
     padding: 14px 28px;
     font-size: 16px;
   }
@@ -1371,7 +1358,6 @@
   }
 
   .about-cart__title {
-    margin-top: 12px;
     margin-bottom: 5px;
 
     font-size: 14px;
@@ -1382,10 +1368,6 @@
     color: var(--font-gray);
     font-size: 12px;
     line-height: 137%;
-  }
-
-  .swiper-navigation {
-    display: none;
   }
 
   .about-form__textarea {

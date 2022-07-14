@@ -72,6 +72,8 @@ const choices = new Choices(element, {
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".link__text").forEach(function (tabsBtn) {
     tabsBtn.addEventListener("click", function (dro) {
+      dro.preventDefault();
+      // changeTab();
       const path = dro.currentTarget.dataset.path;
       document.querySelectorAll(".link__text").forEach(function (btn) {
         btn.classList.remove("link__text--active");
@@ -94,6 +96,10 @@ const mySwiper = new Swiper(".swiper-container", {
   slidesPerView: 2,
   spaceBetween: 12,
   breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 28,
+    },
     900: {
       slidesPerView: 2,
       spaceBetween: 25,
