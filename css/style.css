@@ -270,9 +270,9 @@ input {
   font-size: 20px;
   color: var(--font-gray);
   outline: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .modal__form-name:hover,
@@ -324,9 +324,9 @@ input {
 }
 
 .modal__social-link svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 
 .modal__social-link:not(:last-child) {
@@ -626,9 +626,9 @@ input {
   font-weight: 500;
   border: 2px solid var(--font-black);
   border-radius: 77px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .header__btn-enter svg {
@@ -636,9 +636,9 @@ input {
 }
 
 .header__btn-enter svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: stroke 0.5s ease-in-out;
+  -o-transition: stroke 0.5s ease-in-out;
+  transition: stroke 0.5s ease-in-out;
 }
 
 .header__btn-enter:hover {
@@ -698,9 +698,9 @@ input {
   padding: 5px 5px;
 
   line-height: 100%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .headenav__nav-link:hover {
@@ -745,9 +745,9 @@ input {
 }
 
 .sec-btn__btn svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 
 .sec-btn__btn:hover svg path {
@@ -844,9 +844,9 @@ input {
   font-size: 20px;
   font-weight: 500;
   line-height: 100%;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -1043,15 +1043,15 @@ input {
   padding-left: 2px;
 
   color: var(--font-gray);
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 .like__count svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 
 .like__count:hover span,
@@ -1088,9 +1088,9 @@ input {
   color: var(--btnbg-hover);
   font-size: 20px;
   font-weight: 500;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .podcast__btn-next:hover {
@@ -1303,9 +1303,9 @@ input {
   font-weight: 500;
   border: 2px solid var(--font-black);
   border-radius: 77px;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .archive__btn svg,
@@ -1456,9 +1456,9 @@ input {
 }
 
 .item-right__link svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 
 .item-right__link:hover svg path {
@@ -1754,9 +1754,9 @@ input {
 }
 
 .guest-cart__social-link svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 
 .guest-cart__social-link:not(:last-child) {
@@ -2179,9 +2179,9 @@ input {
 }
 
 .sale__btn svg path {
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
 }
 
 .sale__btn:hover {
@@ -2401,9 +2401,9 @@ input {
   font-size: 20px;
   color: var(--font-white);
   outline: none;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .about-form__textarea:hover {
