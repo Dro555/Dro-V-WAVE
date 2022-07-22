@@ -223,44 +223,32 @@
                 </li> -->
               </ul>
               <div class="nav-box__burger-top burger-top">
-                <button
-                  class="burger-top__burger"
-                  aria-label="Открыть панель навигации"
-                >
-                  <span class="burger-top__burger-line"></span>
-                </button>
-                <div class="burger-top__burger-items burger-items">
-                  <ul class="burger-items__nav-list">
-                    <li class="burger-items__nav-box-item">
-                      <a
-                        class="burger-items__link js-scroll-link"
-                        href="#podcast"
-                        >Подкасты</a
-                      >
-                    </li>
-                    <li class="burger-items__nav-box-item">
-                      <a class="burger-items__link js-scroll-link" href="#radio"
-                        >Передачи</a
-                      >
-                    </li>
-                    <li class="burger-items__nav-box-item">
-                      <a
-                        class="burger-items__link js-scroll-link"
-                        href="#guests"
-                        >Гости</a
-                      >
-                    </li>
-                    <li class="burger-items__nav-box-item">
-                      <a class="burger-items__link js-scroll-link" href="#play"
-                        >Плейлисты</a
-                      >
-                    </li>
-                    <li class="burger-items__nav-box-item">
-                      <a class="burger-items__link js-scroll-link" href="#"
-                        >О нас</a
-                      >
-                    </li>
-                  </ul>
+                <input id="toggle" type="checkbox" />
+
+                <label for="toggle" class="burger-top__hamburger hamburger">
+                  <span class="hamburger__top-bun"></span>
+                  <span class="hamburger__meat"></span>
+                  <span class="hamburger__bottom-bun"></span>
+                </label>
+
+                <div class="burger-top__nav nav">
+                  <div class="nav__nav-wrapper">
+                    <nav class="nav__nav-list">
+                      <a href="#podcast" class="nav__nav-link">Подкасты</a>
+                      <a href="#radio" class="nav__nav-link">Передачи</a>
+                      <a href="#guests" class="nav__nav-link">Гости</a>
+                      <a href="#play" class="nav__nav-link">Плейлисты</a>
+                      <a href="#about" class="nav__nav-link">О нас</a>
+                    </nav>
+                    <nav class="nav__nav-list-mobile">
+                      <a href="#" class="nav__nav-link">Новости</a>
+                      <a href="#" class="nav__nav-link">Блоги</a>
+                      <a href="#" class="nav__nav-link">Топы</a>
+                      <a href="#" class="nav__nav-link">Опросы</a>
+                      <a href="#" class="nav__nav-link">Рейтинги</a>
+                      <a href="#" class="nav__nav-link">Реклама</a>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>
@@ -366,23 +354,63 @@
             </svg>
           </button>
           <div class="headenav__svg"></div>
-          <button class="headenav__mobil" aria-label="Запустить эфир">
-            <svg
-              width="15"
-              height="15"
-              viewbox="0 0 15 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
-              <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
-              <path
-                d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z"
-                fill="white"
-              />
-            </svg>
-            <span>Что в эфире?</span>
-          </button>
+            <div class="headenav__mobile-nav mobile-nav">
+              <button onclick="myFunction()" class="mobile-nav__btn-nav" aria-label="Запустить эфир">
+                <svg
+                  width="15"
+                  height="15"
+                  viewbox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
+                  <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
+                  <path
+                    d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z"
+                    fill="white"
+                  />
+                </svg>
+                Что в эфире?
+              </button>
+              <div id="myDropdown" class="mobile-nav__content">
+                <button aria-label="Запустить архив" class="mobile-nav__btn">
+                  <svg
+                    width="21"
+                    height="20"
+                    viewbox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.5 0C4.975 0 0.5 4.475 0.5 10C0.5 15.525 4.975 20 10.5 20C16.025 20 20.5 15.525 20.5 10C20.5 4.475 16.025 0 10.5 0ZM8.5 14.5V5.5L14.5 10L8.5 14.5Z"
+                      fill="#A1A6B4"
+                    />
+                  </svg>
+                  <span class="mobile-nav__text">
+                    <span>Ранее в эфире</span>
+                    <span>«Музыка»</span>
+                  </span>
+                </button>
+                <button aria-label="Запустить эфир" class="mobile-nav__btn">
+                  <svg
+                    width="21"
+                    height="20"
+                    viewbox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.5 0C4.975 0 0.5 4.475 0.5 10C0.5 15.525 4.975 20 10.5 20C16.025 20 20.5 15.525 20.5 10C20.5 4.475 16.025 0 10.5 0ZM8.5 14.5V5.5L14.5 10L8.5 14.5Z"
+                      fill="#A1A6B4"
+                    />
+                  </svg>
+                  <span class="mobile-nav__text">
+                    <span>Сейчас в эфире</span>
+                    <span>«Как так?»</span>
+                  </span>
+                </button>
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1765,7 +1793,7 @@
       </div>
       <div class="radio__archive-bottom archive-bottom">
         <picture class="archive-bottom__img">
-          <source media="(min-width: 900px)" srcset="img/archive-mic.png" />
+          <source media="(min-width: 930px)" srcset="img/archive-mic.png" />
           <source media="(min-width: 670px)" srcset="img/archive-mic768.png" />
           <img src="img/archive-micMob.png" alt="microphone" />
         </picture>
@@ -1858,11 +1886,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Сергей Денисов</span
                         >
                       </a>
@@ -1871,11 +1898,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Матвей Мечников</span
                         >
                       </a>
@@ -1884,11 +1910,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Константин Прусино</span
                         >
                       </a>
@@ -1897,11 +1922,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Иван Калитников</span
                         >
                       </a>
@@ -1910,11 +1934,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Евгений Войновский</span
                         >
                       </a>
@@ -1923,11 +1946,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="one"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="one"
+                        <span class="link__text link__text--active"
                           >Ольга Мартынова</span
                         >
                       </a>
@@ -1936,11 +1958,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Дмитрий Михалок</span
                         >
                       </a>
@@ -1949,11 +1970,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Пётр Пиотровский</span
                         >
                       </a>
@@ -1962,11 +1982,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Олег Свиридовский</span
                         >
                       </a>
@@ -1975,11 +1994,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Владислав Кауперс</span
                         >
                       </a>
@@ -1988,11 +2006,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Михаил Пожитников</span
                         >
                       </a>
@@ -2001,11 +2018,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Георгий Полуян</span
                         >
                       </a>
@@ -2014,11 +2030,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Денис Тельман</span
                         >
                       </a>
@@ -2027,11 +2042,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Юрий Горин</span
                         >
                       </a>
@@ -2040,11 +2054,10 @@
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
                         data-painter-btn="empty"
+                        data-path="two"
                         href="#"
                       >
-                        <span
-                          class="link__text link__text--active"
-                          data-path="two"
+                        <span class="link__text link__text--active"
                           >Максим Сергеев</span
                         >
                       </a>
@@ -2052,12 +2065,13 @@
                     <!-- <li class="accordion__item">
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
-                        data-painter-btn="empty"href="#"
+                        data-painter-btn="empty"                           data-path="two"
+ href="#"
 
                       >
                         <span
                           class="link__text link__text--active"
-                          data-path="two"
+
                           >Михаил Пожитников</span
                         >
                       </a>
@@ -2065,12 +2079,13 @@
                     <li class="accordion__item">
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
-                        data-painter-btn="empty"href="#"
+                        data-painter-btn="empty"                           data-path="two"
+ href="#"
 
                       >
                         <span
                           class="link__text link__text--active"
-                          data-path="two"
+
                           >Георгий Полуян</span
                         >
                       </a>
@@ -2078,12 +2093,13 @@
                     <li class="accordion__item">
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
-                        data-painter-btn="empty"href="#"
+                        data-painter-btn="empty"                           data-path="two"
+ href="#"
 
                       >
                         <span
                           class="link__text link__text--active"
-                          data-path="two"
+
                           >Денис Тельман</span
                         >
                       </a>
@@ -2091,12 +2107,13 @@
                     <li class="accordion__item">
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
-                        data-painter-btn="empty"href="#"
+                        data-painter-btn="empty"                           data-path="two"
+ href="#"
 
                       >
                         <span
                           class="link__text link__text--active"
-                          data-path="two"
+
                           >Юрий Горин</span
                         >
                       </a>
@@ -2104,12 +2121,13 @@
                     <li class="accordion__item">
                       <a
                         class="accordion__painter-link link link--text link--text-another js-tab-btn"
-                        data-painter-btn="empty"href="#"
+                        data-painter-btn="empty"                           data-path="two"
+ href="#"
 
                       >
                         <span
                           class="link__text link__text--active"
-                          data-path="two"
+
                           >Максим Сергеев</span
                         >
                       </a>
@@ -2358,7 +2376,7 @@
                         srcset="img/blogomdt.jpg"
                       />
                       <source
-                        media="(min-width: 900px)"
+                        media="(min-width: 930px)"
                         srcset="img/blogomtab.jpg"
                       />
                       <source
@@ -2446,7 +2464,7 @@
                         srcset="img/emptydt.png"
                       />
                       <source
-                        media="(min-width: 900px)"
+                        media="(min-width: 930px)"
                         srcset="img/emptytab.png"
                       />
                       <source
@@ -2909,7 +2927,7 @@
       <div class="sale__container container">
         <picture class="sale__img">
           <source media="(min-width: 1200px)" srcset="img/sale.png" />
-          <source media="(min-width: 900px)" srcset="img/sale-tab.png" />
+          <source media="(min-width: 930px)" srcset="img/sale-tab.png" />
 
           <source media="(min-width: 576px)" srcset="img/sale768.png" />
           <img src="img/sale-mob.png" alt="Фото товара" />
@@ -3013,9 +3031,9 @@
             <div class="about-main__items swiper-wrapper">
               <div class="about-main__item about-cart swiper-slide">
                 <picture class="about-cart__img">
-                  <source media="(min-width: 1200px)" srcset="img/about1.png" />
+                  <source media="(min-width: 1230px)" srcset="img/about1.png" />
                   <source
-                    media="(min-width: 900px)"
+                    media="(min-width: 930px)"
                     srcset="img/about1-tab.png"
                   />
                   <source media="(min-width: 576px)" srcset="img/about1.png" />
@@ -3031,9 +3049,9 @@
               </div>
               <div class="about-main__item about-cart swiper-slide">
                 <picture class="about-cart__img">
-                  <source media="(min-width: 1200px)" srcset="img/about2.png" />
+                  <source media="(min-width: 1230px)" srcset="img/about2.png" />
                   <source
-                    media="(min-width: 900px)"
+                    media="(min-width: 930px)"
                     srcset="img/about2-tab.png"
                   />
                   <source media="(min-width: 576px)" srcset="img/about2.png" />
@@ -3049,9 +3067,9 @@
               </div>
               <div class="about-main__item about-cart swiper-slide">
                 <picture class="about-cart__img">
-                  <source media="(min-width: 1200px)" srcset="img/about3.png" />
+                  <source media="(min-width: 1230px)" srcset="img/about3.png" />
                   <source
-                    media="(min-width: 900px)"
+                    media="(min-width: 930px)"
                     srcset="img/about3-tab.png"
                   />
                   <source media="(min-width: 576px)" srcset="img/about3.png" />
@@ -3066,9 +3084,9 @@
               </div>
               <div class="about-main__item about-cart swiper-slide">
                 <picture class="about-cart__img">
-                  <source media="(min-width: 1200px)" srcset="img/about4.png" />
+                  <source media="(min-width: 1230px)" srcset="img/about4.png" />
                   <source
-                    media="(min-width: 900px)"
+                    media="(min-width: 930px)"
                     srcset="img/about4-tab.png"
                   />
                   <source media="(min-width: 576px)" srcset="img/about4.png" />
@@ -3083,9 +3101,9 @@
               </div>
               <div class="about-main__item about-cart swiper-slide">
                 <picture class="about-cart__img">
-                  <source media="(min-width: 1200px)" srcset="img/about5.png" />
+                  <source media="(min-width: 1230px)" srcset="img/about5.png" />
                   <source
-                    media="(min-width: 900px)"
+                    media="(min-width: 930px)"
                     srcset="img/about5-tab.png"
                   />
                   <source media="(min-width: 576px)" srcset="img/about5.png" />
@@ -3100,9 +3118,9 @@
               </div>
               <div class="about-main__item about-cart swiper-slide">
                 <picture class="about-cart__img">
-                  <source media="(min-width: 1200px)" srcset="img/about6.png" />
+                  <source media="(min-width: 1230px)" srcset="img/about6.png" />
                   <source
-                    media="(min-width: 900px)"
+                    media="(min-width: 930px)"
                     srcset="img/about6-tab.png"
                   />
                   <source media="(min-width: 576px)" srcset="img/about6.png" />

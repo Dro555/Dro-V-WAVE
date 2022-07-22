@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
   .container {
     max-width: 902px;
     padding-left: 39px;
@@ -221,7 +221,6 @@
 
   .play-right__item {
     width: 31%;
-    height: 112px;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 0;
@@ -322,8 +321,8 @@
 
   .swiper-navigation {
     top: 32%;
-    left: -5%;
-    width: 110%;
+    left: -6%;
+    width: 112%;
   }
 
   .about-form {
@@ -371,7 +370,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .container {
     max-width: 570px;
 
@@ -405,7 +404,7 @@
   }
 
   .header__search {
-    margin-left: 156%;
+    margin-left: 190%;
   }
 
   .header__logo {
@@ -511,7 +510,7 @@
 
   .archive-bottom {
     display: flex;
-    padding-left: 212px;
+    padding-left: 28%;
     padding-top: 30px;
     padding-bottom: 5px;
     border-top: 1px solid var(--font-gray);
@@ -521,8 +520,8 @@
   }
 
   .archive-bottom__btn {
-    width: 34.5%;
-    padding: 10px 25px;
+    width: 34%;
+    padding: 10px 19px;
     margin-bottom: 7px;
   }
 
@@ -595,6 +594,7 @@
 
   .play-right__item {
     width: 47%;
+    margin-bottom: 28px;
   }
 
   .play-right__item:nth-child(3n) {
@@ -705,8 +705,8 @@
 
   .swiper-navigation {
     top: 29%;
-    left: -13%;
-    width: 125%;
+    left: -11%;
+    width: 122%;
   }
 
   .about__about-main {
@@ -879,8 +879,8 @@
   }
 
   .header__search {
-    margin-left: 205%;
-    margin-right: 0;
+    margin-left: 240%;
+    /* margin-right: 0; */
   }
 
   .header__btn-enter {
@@ -904,18 +904,142 @@
     display: none;
   }
 
-  .headenav__mobil {
-    display: block;
-    padding-top: 13px;
-    padding-left: 27%;
+   /* Burger top==================================== */
+   .hamburger {
+    top: 22%;
+    left: 31%;
+}
+
+.nav::after {
+  display: none;
+}
+
+.nav::before {
+  display: none;
+}
+
+.nav {
+  margin-top: 50px;
+  padding-top: 80px;
+  padding-left: 32px;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  background: linear-gradient(to bottom, var(--hover-light) 230px, var(--font-white) 230px);
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 2;
+}
+
+.nav__nav-list a {
+  margin-bottom: 40px;
   }
 
-  .headenav__mobil span {
+  .nav__nav-list a:nth-child(n+4) {
+    padding-top: 20px;
+    margin-bottom: 26px;
+}
+
+.nav__nav-list-mobile {
+  display: block;
+  padding-top: 30px;
+  column-count: 2;
+    column-gap: 42%;
+    width: 200px;
+  }
+
+  .nav__nav-list-mobile a{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 16px;
+    }
+
+/* Burger bottom================================= */
+.mobile-nav__btn-nav {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  display: block;
+    padding-top: 13px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     color: var(--btnbg-hover);
+}
+
+.mobile-nav__btn-nav svg{
+  -webkit-transition: rotate 0.5s ease-in-out;
+  -o-transition: rotate 0.5s ease-in-out;
+  transition: rotate 0.5s ease-in-out;
+}
+
+.mobile-nav__btn-nav:hover, .mobile-nav__btn-nav:focus {
+  background-color: var(--fontlig-grey);
+}
+
+.mobile-nav__btn-nav svg:focus,
+.mobile-nav__btn-nav svg:active{
+  transform: rotate(45deg);
+}
+
+.mobile-nav {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-nav__content {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 3px;
+
+  background-color: var(--font-white);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.mobile-nav__btn {
+  color: var(--font-black);
+  padding-left: 22px;
+  padding-right: 22px;
+  text-decoration: none;
+  display: grid;
+}
+
+.mobile-nav__btn svg {
+margin-bottom: 4px;
+}
+
+.mobile-nav__text {
+text-align: left;
+}
+
+.mobile-nav__btn:first-child {
+  border-right: 2px solid var(--font-gray);
   }
+
+.mobile-nav__text span:first-child {
+  font-size: 10px;
+  color: var(--font-gray);
+}
+
+.mobile-nav__content button:hover {
+  background-color: var(--font-white)
+}
+
+.show {
+  display:flex;
+}
 
   /* Hero====================================== */
   .hero__container {
@@ -1062,34 +1186,62 @@
 
   .item-right {
     position: relative;
-    max-width: 44%;
-    min-height: 149px;
+    max-width: 43%;
     margin-bottom: 29px;
   }
 
-  .item-right__title {
-    width: 97%;
-    padding-top: 9px;
-    padding-left: 9px;
-    font-size: 12px;
-  }
-
-  .item-right__discr {
-    width: 70%;
-    margin-left: 10px;
-    font-size: 9px;
+  .item-right__content {
+    min-height: 90px;
   }
 
   .item-right__link {
     position: absolute;
-    bottom: 7px;
-    left: -6px;
+    bottom: 10px;
+    left: 3px;
     font-size: 12px;
+  }
+
+  .item-right__link::before {
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    left: 0px;
+    width: 114px;
+    height: 53px;
+    z-index: 1;
+    transition: background-color 0.5s linear;
+    overflow: hidden;
+  }
+
+  .item-right__link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 112px;
+    height: 85px;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .item-right__content {
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-bottom: 15px;
+  }
+
+  .item-right__title {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .item-right__discr {
+    font-size: 9px;
   }
 
   .archive-bottom {
     display: flex;
-    padding-left: 33px;
+    padding-left: 19%;
     padding-top: 29px;
     padding-bottom: 5px;
     border-top: 1px solid var(--font-gray);
@@ -1103,15 +1255,15 @@
   }
 
   .archive-bottom__text {
-    width: 80%;
+    width: 92%;
     margin-bottom: 6px;
 
     font-size: 14px;
   }
 
   .archive-bottom__btn {
-    width: 55.5%;
-    padding: 8px 18px;
+    width: 55%;
+    padding: 8px 11px;
     margin-bottom: 0;
   }
 
@@ -1455,31 +1607,5 @@
     padding-top: 0px;
 
     font-size: 12px;
-  }
-}
-
-@media (max-width: 380px) {
-  .container {
-    max-width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  /* Radio=================================== */
-  .item-right {
-    max-width: 43%;
-  }
-
-  .archive-bottom {
-    padding-bottom: 20px;
-  }
-
-  .archive-bottom__btn {
-    padding: 4px 18px;
-  }
-
-  /* Play================================ */
-  .play-right__item {
-    width: 104px;
   }
 }
