@@ -1,20 +1,23 @@
-document.querySelector(".hamburger").addEventListener("click", function () {
-  document.querySelector(".nav").classList.toggle("animate");
-});
-
-// ======================================
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function toggleMenuTop() {
+  const button = document.getElementById("burger-top");
+  const menu = document.getElementById("nav");
+  button.classList.toggle("active");
+  menu.classList.toggle("active");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.mobile-nav__btn-nav')) {
-    var dropdowns = document.getElementsByClassName("mobile-nav__content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+function toggleMenu() {
+  const button = document.getElementById("burger-top");
+  const menu = document.getElementById("nav");
+  button.classList.toggle("active");
+  menu.classList.toggle("active");
+}
+// =============================================================
+function myFunction() {
+  var element = document.getElementById("myDropdown");
+  if (element.classList.contains("mobile-nav__content")) {
+    element.classList.replace("mobile-nav__content", "block");
+  } else if (element.classList.contains("block")) {
+    element.classList.replace("block", "mobile-nav__content");
   }
 }
+
+document.getElementById("mobnavbtn").addEventListener("click", myFunction);
