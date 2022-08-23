@@ -438,6 +438,7 @@ input {
   display: block;
   grid-column: 1/3;
   grid-row: 1/2;
+  cursor: pointer;
 }
 
 .header__nav-top {
